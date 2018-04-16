@@ -1,0 +1,66 @@
+#header {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background: url(./img/header.png)
+      center no-repeat;
+    background-size: 50%;
+  }
+
+  #footer {
+    position:fixed;
+    left: 0px;
+    bottom:0px;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    background: url(./img/footer.png)
+      center no-repeat;
+    background-size: 50%;
+  }
+  
+#img-liante{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: url(./img/liante.png)
+      center no-repeat;
+    background-size: 80%;
+}
+
+#img-troll{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: url(./img/troll.png)
+      center no-repeat;
+    background-size: 80%;
+}
+
+  #liometro {
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+  }
+  
+  #liometro div {
+    height: 20px;
+    background: crimson;
+  }
+  
+  .centrado {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  button{
+      width: 120px;
+      padding: 10px;
+      color: #fff;
+      background-color: #007bff;
+      border-color: #007bff;
+      border:none;
+  }
+  

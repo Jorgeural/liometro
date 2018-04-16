@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Liometro!</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div id="header"> </div>
+            <!-- textos -->
+            <div v-if="!started">
+              <div class="centrado">
+                 <h1>Bienvenido a OSW, ¿Cuánto aguantarás sin ser liado? </h1>
+                 <button  title="empezar" v-on:click="start()" v-if="!started"> Empezar!</button>
+              </div>   
+            </div>    
+            <div v-if="started && !ended">
+                <div class="centrado">
+                   <h1>El liometro está subiendo!!! </h1>                  
+                </div>   
+            </div>    
+            <div v-if="started && ended">
+                <div class="centrado">
+                   <h1>Te han liado !! </h1>
+                   <button title="restart" v-on:click="restart"> Restart!</button>  
+                </div>   
+            </div>  
+            
+            <!-- <h1> {{tiempo}}</h1> -->
+            <!-- tiempo -->          
+            
+            <!-- Imagen -->
+            <div id="img-liante" v-if="started && !ended"></div>
+            <div id="img-troll" v-if="started && ended"></div>
+
+            <!-- liometro -->
+            <div id="liometro" v-if="started">
+                <div v-bind:style="{ width: liometro + '%' }"></div>
+            </div>
+             
+            <!-- escaqueo -->
+            <div class="centrado" v-if="started && !ended"> 
+              <button title="escaquearse" v-on:click="escaquearse" > Escaquearse</button>                     
+            </div> 
+            <!-- footer -->
+            <div id="footer"> </div>                 
+          </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
